@@ -10,7 +10,7 @@ def get_api(url):
 
 def main():
     keyword = "鬼滅"
-    url = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170426?format=json&keyword={}&applicationId=1019079537947262807&maxPrice".format(
+    url = "https://app.rakuten.co.jp/services/api/Product/Search/20170426?format=json&keyword={}&applicationId=1019079537947262807&maxPrice".format(
         keyword)
 
     result = get_api(url)
