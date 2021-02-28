@@ -16,12 +16,12 @@ def main():
 
     result = get_api(url)
     # print(result)
-    item_key = ['itemName', 'itemPrice','maxPrice','minPrice']
+    item_key = ['itemName', 'ProductDetails','maxPrice','minPrice']
     item_list = []
 
     for i in range(len(result)):
         tmp_item = {}
-        item = result['Products'][i]['maxPrice']
+        item = result['Products'][i]['Product']
         for key, value in item.items():
             if key in item_key:
                 tmp_item[key] =value
